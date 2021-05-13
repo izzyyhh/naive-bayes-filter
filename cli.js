@@ -18,7 +18,7 @@ rl.on("line", line => {
     const text = line.trim();
 
     for (const cls of ["spam", "ham"]) {
-        console.log(`P(${cls} | "${text}"): ${spamFilter.pClassText(cls, text)*100}%`);
+        console.log(`P(${cls} | "${text}"): ${spamFilter.pClassText(cls, text) * 100}%`);
     }
     console.log(`"${text}" is${spamFilter.isSpam(text) ? "" : " not"} spam\n`);
 
